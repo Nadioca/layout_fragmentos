@@ -1,5 +1,6 @@
 package com.example.alumnofp.pruebatabs;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -94,7 +95,11 @@ public class MainActivity extends AppCompatActivity implements BienvenidaFragmen
 
     @Override
     public void onFragmentInteraction(Uri uri) {
-        Toast.makeText(this, "Te he matado", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Te he matado", Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this, AdicionalActivity.class);
+        intent.putExtra("texto", "Hola papafrita");
+        startActivity(intent);
     }
 
     /**

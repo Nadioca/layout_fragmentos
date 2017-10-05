@@ -8,4 +8,10 @@
     tools:context="com.example.alumnofp.pruebatabs.AdicionalActivity"
     tools:showIn="@layout/activity_adicional">
 
+    <TextView
+        android:id="@+id/textViewTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADIOS"/>
+
 </android.support.constraint.ConstraintLayout>

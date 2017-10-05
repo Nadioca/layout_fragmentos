@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 /**
@@ -74,6 +75,10 @@ public class BienvenidaFragment extends Fragment {
                 onButtonPressed(Uri.EMPTY);
             }
         });
+
+        TextView textPepe = (TextView) view.findViewById(R.id.textPepe);
+        Principal app = (Principal) getActivity().getApplication();
+        textPepe.setText(app.getPepe());
 
         return view;
     }
