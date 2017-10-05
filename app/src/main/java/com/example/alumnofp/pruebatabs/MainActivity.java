@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.alumnofp.pruebatabs.BienvenidaFragment.OnFragmentInteractionListener;
 
@@ -93,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements BienvenidaFragmen
 
     @Override
     public void onFragmentInteraction(Uri uri) {
-
+        Toast.makeText(this, "Te he matado", Toast.LENGTH_SHORT).show();
     }
 
     /**
@@ -175,6 +176,6 @@ public class MainActivity extends AppCompatActivity implements BienvenidaFragmen
             }
             return null;
         }
-        
+
     }
 }
